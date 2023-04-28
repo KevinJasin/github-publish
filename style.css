@@ -1,32 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#kontainer {
+    display: block;
 }
 
-
-
-
-.container {
+#container {
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    gap: 1rem;
-    background-color: aliceblue;
-    min-height: 100vh;
-    padding: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  .cat {
+    font-weight: bold;
 }
-
-
-
-
-.container >* {
-    border: 2px solid red;
-}
-
-
-header,
-footer,
-main {
-    padding: 1rem;
-    border: 2px solid red;
+.cat div:first-child {
+    font-size: 1.2em;
 }
